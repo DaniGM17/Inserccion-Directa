@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
  *
  * @author dania
  */
-public class InserccionDirecta {
+public class InsercionDirecta {
 
     public static BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
     public static String entrada;
@@ -22,7 +22,7 @@ public class InserccionDirecta {
     }
 
 
-    public static int[] inserccionDirecta(int[] listaD) {
+    public static int[] insercionDirecta(int[] listaD) {
        for(int k=1; k<listaD.length;k++){
            int mantener = listaD[k];
            int j = k-1;
@@ -52,7 +52,7 @@ public class InserccionDirecta {
         entrada = bufer.readLine();
         t = Integer.parseInt(entrada);
         array = leerArreglo(t);
-        array = inserccionDirecta(array);
+        array = insercionDirecta(array);
         imprimirArreglo(array);
     }
 
